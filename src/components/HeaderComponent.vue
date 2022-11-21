@@ -1,9 +1,9 @@
 <template>
     <nav>
-        <div>
+        <div class="d-flex ">
             <img src="public\image\image\takeout-logo.png" alt="">
         </div>
-        <div>
+        <div class="d-flex">
             <button class="active">Home</button>
             <button>Order Online</button>
             <button>About</button>
@@ -16,6 +16,7 @@
 </template>
 
 <script>
+name: 'HeaderComponent';
 export default {
 
 }
