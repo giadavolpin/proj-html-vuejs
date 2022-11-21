@@ -61,6 +61,10 @@ nav {
     background-color: rgb(207, 25, 37);
     color: white;
     position: absolute;
+    bottom: 50px;
+    right: 0;
+    top: -55px;
+
     /* sistemare qui */
 }
 </style>

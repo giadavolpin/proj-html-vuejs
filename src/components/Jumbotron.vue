@@ -1,16 +1,23 @@
 <template>
     <!-- JUMBOTRON -->
-    <div class="jumbotron d-flex ">
-        <div class="row justify-content-center align-content-center">
-            <h3 class="bianco col-7">Hungry?</h3>
-            <h1 class=" giallo col-7">Great Food</h1>
-            <h1 class="bianco col-7">Delivered</h1>
-
+    <div class="jumbotron">
+        <div class="d-flex flex-column">
+            <h3 class="bianco">Hungry?</h3>
+            <h1 class=" giallo">Great Food</h1>
+            <h1 class="bianco">Delivered</h1>
         </div>
-        <div>
+        <div class="">
+            <div class="rosso">
+                <p class=""> view our menu</p>
+                <div class="">
+                    <!-- icona  -->
+                </div>
+            </div>
+        </div>
+        <div class="btnbianco">
             <!-- bottone a lato -->
         </div>
-        <div>
+        <div class="btnbianco">
             <!-- bottone a lato -->
         </div>
     </div>
@@ -30,7 +37,7 @@ export default {
 
 <style lang="scss" scoped>
 .giallo {
-    color: rgb(249, 210, 47);
+    color: rgb(252, 214, 108);
 }
 
 .bianco {
@@ -44,5 +51,18 @@ export default {
     background-size: cover;
     background-repeat: no-repeat;
 
+}
+
+.rosso {
+    background-color: rgb(204, 26, 38);
+    color: white;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.btnbianco {
+    height: 45px;
+    width: 45px;
+    background-color: white;
 }
 </style>
