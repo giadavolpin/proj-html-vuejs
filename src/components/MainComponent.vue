@@ -21,7 +21,11 @@
             </div>
         </div>
         <h3>Our Most Popular Dishes</h3>
-
+        <div class="cards">
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+        </div>
 
     </div>
 </template>

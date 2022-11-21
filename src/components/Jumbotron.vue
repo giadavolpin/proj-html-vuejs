@@ -14,10 +14,10 @@
                 </div>
             </div>
         </div>
-        <div class="btnbianco">
+        <div class="btnbianco btnsopra">
             <!-- bottone a lato -->
         </div>
-        <div class="btnbianco">
+        <div class="btnbianco btnsotto">
             <!-- bottone a lato -->
         </div>
     </div>
@@ -50,7 +50,7 @@ export default {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
+    position: relative;
 }
 
 .rosso {
@@ -64,5 +64,18 @@ export default {
     height: 45px;
     width: 45px;
     background-color: white;
+    border-radius: 10px;
+}
+
+.btnsopra {
+    position: absolute;
+    right: 10 px;
+    top: 10px;
+}
+
+.btnsotto {
+    position: absolute;
+    right: 10px;
+    top: 60px;
 }
 </style>
