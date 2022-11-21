@@ -51,13 +51,15 @@ export default {
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    /* sistemare qui */
 }
 
 .rosso {
     background-color: rgb(204, 26, 38);
     color: white;
-    border-radius: 30px;
+    border-radius: 20px;
     text-align: center;
+    position: absolute;
 }
 
 .btnbianco {
