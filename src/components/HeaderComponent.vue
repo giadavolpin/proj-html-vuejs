@@ -21,40 +21,27 @@
             </div>
         </div>
     </nav>
-    <!-- JUMBOTRON -->
-    <div class="jumbotron">
-        <div class="primaparte">
-            <h3 class="bianco">Hungry?</h3>
-            <h1 class="giallo">Great Food</h1>
-            <h1 class="bianco">Delivered</h1>
-
-        </div>
-        <div>
-            <!-- bottone a lato -->
-        </div>
-        <div>
-            <!-- bottone a lato -->
-        </div>
-    </div>
+    <Jumbotron />
 </template>
 
 <script>
 import general from '../assets/general.scss';
 import variables from '../assets/variables.scss';
-name: 'HeaderComponent';
+import Jumbotron from './Jumbotron.vue';
+
 export default {
+    name: 'HeaderComponent',
     general,
-    variables
+    variables,
+    components: {
+        Jumbotron
+    },
 }
 </script>
 
 <style lang="scss" scoped>
 .attivo {
     color: rgb(249, 210, 47); //sistemare qui
-}
-
-.giallo {
-    color: rgb(249, 210, 47);
 }
 
 .bianco {
@@ -75,13 +62,5 @@ nav {
     color: white;
     position: absolute;
     /* sistemare qui */
-}
-
-.primaparte {
-    background-image: url(../image/home-background-hero-scaled.jpg);
-}
-
-.jumbotron {
-    height: 560px;
 }
 </style>
