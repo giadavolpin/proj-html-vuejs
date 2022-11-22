@@ -2,7 +2,6 @@
     <div class="container gvcontainer">
         <!-- container allineare al centro -->
         <div class="d-flex flex-row justify-content-between">
-            <!-- uppercase -->
             <!-- va in centro??  -->
             <div class="text-uppercase">
                 <i class="fa-regular fa-clock"></i>
@@ -44,13 +43,16 @@
         </div>
     </div>
     <div class="sconto"></div>
+<MenuCategories/>
 
 </template>
 
 <script>
+import MenuCategories from './MenuCategories.vue';
+
 export default {
     name: 'MainComponent',
-   components: {}
+   components: { MenuCategories }
 
  
 }
@@ -83,7 +85,7 @@ export default {
     text-align: center;
 }
 .sconto{
-    background-image: url(public/image/first-order-background-scaled.jpg); 
+    background-image: url(public/image/sconto.png); 
     height: 360px;
     background-size: cover;
 }

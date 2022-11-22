@@ -1,14 +1,14 @@
 <template>
-    <!-- JUMBOTRON -->
+    <!-- JUMBOTRON prima schermata -->
     <div class="jumbotron">
-        <div class="d-flex flex-column">
+        <div class="d-flex flex-column container ">
             <h3 class="bianco">Hungry?</h3>
             <h1 class=" giallo">Great Food</h1>
             <h1 class="bianco">Delivered</h1>
         </div>
-        <div class="">
+        <div class="d-flex container">
             <div class="rosso">
-                <p class=""> view our menu</p>
+                <p class="text-uppercase"> view our menu</p>
                 <div class="">
                     <!-- icona  -->
                 </div>
@@ -55,6 +55,7 @@ export default {
     border-radius: 20px;
     text-align: center;
     position: absolute;
+    width: 150px;
 }
 
 .btnbianco {
