@@ -1,9 +1,8 @@
 <template>
     <nav>
         <div v-bind="props"></div>
-        <div class="d-flex justify-content-around" v-for="(item, index) in intestazione, key = id ">
-            <img :src="item.img">
-            <button>{{ item.text }}</button> -->
+        <div class="d-flex justify-content-around" v-for="item in intestazione" :img="item.src" :button="item.text">
+
         </div>
 
         <div>
@@ -17,26 +16,25 @@
 </template>
 
 <script>
+import HeaderProduct from './HeaderComponent.vue'
 import general from '../assets/general.scss';
 import variables from '../assets/variables.scss';
+import HeaderProduct from './HeaderProduct.vue';
 import Jumbotron from './Jumbotron.vue';
 
 export default {
     name: 'HeaderComponent',
     general,
     variables,
+    HeaderProduct,
     components: {
         Jumbotron
     },
-    data() {
-        return {
-            props: ['src', 'text', "icona"],
-        }
-    },
-    created: {
-        console.log(props),
-    }
+    props: ['src', 'text', "icona"],
+
 }
+
+
 </script>
 
 <style lang="scss" scoped>
