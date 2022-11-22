@@ -7,7 +7,7 @@
         </div>
         <!-- cards -->
         <div class="d-flex container" v-for="(item,index) in menu" :key="index">
-             {{item.img}}   
+            <img class="imggv" :src="item.img" alt="">    
         </div>
         <div class="container d-flex flex-row justify-content-around">
             <div>
@@ -28,11 +28,20 @@
             </div>
         </div>
     </div>
+    <div class="orderapp">
+        <div>
+        <h2>Download Our</h2>
+        <h1>Ordering App</h1>
+        <img src="/image" alt="">
+        </div>
+        
+    </div>    
 </template>
 
 <script>
     export default {
      name:'MenuCategories',   
+     
      data() {
             return {
                menu: [
@@ -50,7 +59,7 @@
             },
             {
                 id: '4',
-                img: '/public/image/first-order-background-scaled.jpg'
+                img: '/public/image/fries-menu-background.jpg'
             },
             {
                 id: '5',
@@ -84,5 +93,12 @@
 .gvcont{
     margin: 30px;
 }
-
+.orderapp{
+    background-image: url(public/image/app-ordering-scaled.jpg);
+}
+.imggv{
+    width: 250px;
+    height: 170px;
+    
+}
 </style>
