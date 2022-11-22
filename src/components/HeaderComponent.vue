@@ -1,10 +1,10 @@
 <template>
     <nav>
-        <div class="d-flex justify-content-between">
-            <div>
+        <div class="d-flex ">
+            <div class="align-content-end">
             <img class="" src="/image/takeout-logo.png" alt="">
             </div>
-            <div class="d-flex">
+            <div> <!-- sistemare qui -->
                 <ul>
                     <li v-for="(item,index) in navbar" :key="index">{{item.name}}</li>
                 </ul>
@@ -71,6 +71,10 @@ export default {
 }
 ul {
     color: $white;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+        
     /* sistemare altro */
 }
 .bianco {
@@ -92,7 +96,7 @@ nav {
     position: absolute;
     bottom: 50px;
     right: 0;
-    top: -55px;
+    top: 0px;
 
     /* sistemare qui */
 }
