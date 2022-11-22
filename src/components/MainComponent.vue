@@ -34,16 +34,16 @@
 </template>
 
 <script>
-import general from '../assets/general.scss';
-import variables from '../assets/variables.scss';
 export default {
     name: 'MainComponent',
-    general,
-    variables,
+   components: {}
+
+ 
 }
 </script>
 
 <style lang="scss" scoped>
+@use '../assets/variables' as *;
 .container {
     max-width: 700px;
     height: 700px;

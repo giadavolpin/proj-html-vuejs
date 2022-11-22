@@ -1,8 +1,17 @@
 <template>
     <nav>
         <div v-bind="props"></div>
-        <div class="d-flex justify-content-around" v-for="item in intestazione" :img="item.src" :button="item.text">
-
+        <div class="d-flex justify-content-between">
+            <div>
+            <img class="" src="/image/takeout-logo.png" alt="">
+            </div>
+            <div class="d-flex">
+                <ul>
+                    <li></li>
+                    <li></li>
+                </ul>
+            
+            </div>
         </div>
 
         <div>
@@ -16,22 +25,41 @@
 </template>
 
 <script>
-import HeaderProduct from './HeaderComponent.vue'
-import general from '../assets/general.scss';
-import variables from '../assets/variables.scss';
-import HeaderProduct from './HeaderProduct.vue';
 import Jumbotron from './Jumbotron.vue';
 
 export default {
     name: 'HeaderComponent',
-    general,
-    variables,
-    HeaderProduct,
     components: {
         Jumbotron
     },
     props: ['src', 'text', "icona"],
-
+    data() {
+        return {
+        navbar: [
+            {
+                name: "Home", 
+                link: ""
+            },
+            {
+                name: "Order Online", 
+                link: ""
+            },
+            {
+                name: "About", 
+                link: ""
+            },
+            {
+                name: "News", 
+                link: ""
+            },
+            {
+                name: "Contact Us", 
+                link: ""
+            },
+        ]      
+        }
+    },
+     
 }
 
 
