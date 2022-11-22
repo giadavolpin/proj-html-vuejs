@@ -1,20 +1,12 @@
 <template>
     <nav>
-        <div class="d-flex justify-content-around">
-            <div class="d-flex">
-                <img class="" src="../image/takeout-logo.png" alt="">
-            </div>
-            <div class="d-flex">
-                <button type="button" class=" btn attivo dropdown-toggle">Home</button>
-                <button type="button" class=" btn bianco">Order Online</button>
-                <button type="button" class=" btn bianco">About</button>
-                <button type="button" class=" btn bianco">News</button>
-                <button type="button" class=" btn bianco">Contact Us</button>
-                <button type="button" class=" btn bianco"><i class="fa-solid fa-cart-shopping "></i></button>
-                <!-- sistemare fontewesome -->
-            </div>
+        <div v-bind="props"></div>
+        <div class="d-flex justify-content-around" v-for="(item, index) in intestazione, key = id ">
+            <img :src="item.img">
+            <button>{{ item.text }}</button> -->
         </div>
-        <div class="">
+
+        <div>
             <!-- sistemare il position:relative -->
             <div class="pallinorosso">
                 <p class="d-flex justify-content-center">+</p>
@@ -36,6 +28,14 @@ export default {
     components: {
         Jumbotron
     },
+    data() {
+        return {
+            props: ['src', 'text', "icona"],
+        }
+    },
+    created: {
+        console.log(props),
+    }
 }
 </script>
 
