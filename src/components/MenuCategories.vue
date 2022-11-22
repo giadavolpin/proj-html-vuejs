@@ -1,13 +1,31 @@
 <template>
     <div>
     <!-- titolo -->
-        <div class="container gvcont d-flex justify-content-around">
+        <div class="container gvcont">
             <h2><strong>Menu Categories</strong></h2>
             <button type="button" class="btn btn-danger btngv text-uppercase">view the full menu <i class="fas fa-arrow-circle-right"></i></button>
         </div>
         <!-- cards -->
         <div class="d-flex container" v-for="(item,index) in menu" :key="index">
              {{item.img}}   
+        </div>
+        <div class="container d-flex flex-row justify-content-around">
+            <div>
+                <img src="/public/image/vegetarian.png" alt="">
+                <p class="p-1">Vegetarian</p>
+            </div>
+            <div>
+                <img src="/public/image/grano.png" alt="">
+                <p class="p-1">Gluten Free</p>
+            </div>
+            <div>
+                <img src="/public/image/latte.png" alt="">
+                <p class="p-2">Dairy Free</p>
+            </div>
+            <div>
+                <img src="/public/image/keto.png" alt="">
+                <p class="p-1">Keto Friendly</p>
+            </div>
         </div>
     </div>
 </template>
@@ -59,6 +77,9 @@
 @use '../assets/variables' as *;
 .btngv{
     border-radius: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: flex-end;
 }
 .gvcont{
     margin: 30px;
