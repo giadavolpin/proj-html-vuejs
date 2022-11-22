@@ -31,7 +31,6 @@ export default {
     components: {
         Jumbotron
     },
-    props: ['src', 'text', "icona"],
     data() {
         return {
         navbar: [
