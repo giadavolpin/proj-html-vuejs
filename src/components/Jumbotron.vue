@@ -24,24 +24,19 @@
 </template>
 
 <script>
-import general from '../assets/general.scss';
-import variables from '../assets/variables.scss';
-
 export default {
-    name: 'Jumbotron',
-    general,
-    variables,
-
+    name: 'Jumbotron'
 }
 </script>
 
 <style lang="scss" scoped>
+@use '../assets/variables' as *;
 .giallo {
-    color: rgb(252, 214, 108);
+    color: $giallo;
 }
 
 .bianco {
-    color: white;
+    color: $white;
 }
 
 .jumbotron {

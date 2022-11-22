@@ -1,15 +1,14 @@
 <template>
     <nav>
-        <div v-bind="props"></div>
         <div class="d-flex justify-content-between">
             <div>
             <img class="" src="/image/takeout-logo.png" alt="">
             </div>
             <div class="d-flex">
                 <ul>
-                    <li></li>
-                    <li></li>
+                    <li v-for="(item,index) in navbar" :key="index">{{item.name}}</li>
                 </ul>
+                <!-- icona -->
             
             </div>
         </div>
@@ -66,10 +65,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@use '../assets/variables' as*;
 .attivo {
     color: rgb(249, 210, 47); //sistemare qui
 }
-
+ul {
+    color: $white;
+    /* sistemare altro */
+}
 .bianco {
     color: white;
 }
