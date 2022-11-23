@@ -7,10 +7,7 @@
             <h1 class="bianco">Delivered</h1>
         </div>
         <div class="d-flex container">
-            <div class="rosso">
-                <p class="text-uppercase"> view our menu <i class="fas fa-arrow-circle-right"></i></p>
-                
-            </div>
+            <button type="button" class="btn btn-danger btngv text-uppercase">view our menu <i class="fas fa-arrow-circle-right"></i></button>
         </div>
        <!-- btn fissi nella pagina -->
         <div class="btnbianco btnsopra">
@@ -33,7 +30,10 @@ export default {
 .giallo {
     color: $giallo;
 }
-
+.btngv{
+    border-radius: 30px;
+   
+}
 .bianco {
     color: $white;
 }
