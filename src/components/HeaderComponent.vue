@@ -2,21 +2,20 @@
     <nav>
         <div class="d-flex ">
             <div class="align-content-end">
-            <img class="" src="/image/takeout-logo.png" alt="">
+                <img  class="p-3" src="/image/takeout-logo.png" alt="">
             </div>
-            <div> <!-- sistemare qui -->
+            <div class="d-flex"> 
                 <ul>
                     <li v-for="(item,index) in navbar" :key="index">{{item.name}}</li>
                 </ul>
-                <!-- icona -->
-            
+                <i class="fa-solid fa-cart-shopping bianco allineamento"></i>           
             </div>
         </div>
 
         <div>
             <!-- sistemare il position:relative -->
             <div class="pallinorosso">
-                <p class="d-flex justify-content-center">+</p>
+                <span class="d-flex justify-content-center piu">+</span>
             </div>
         </div>
     </nav>
@@ -65,8 +64,16 @@ export default {
 
 <style lang="scss" scoped>
 @use '../assets/variables' as*;
-.attivo {
-    color: rgb(249, 210, 47); //sistemare qui
+li:hover {
+    color: rgb(249, 210, 47); 
+}
+.allineamento{
+    padding-top: 65px;
+    padding-left: 15px;
+    cursor: pointer;
+}
+i:hover{
+    color: $giallo;
 }
 ul {
     color: $white;
@@ -74,9 +81,12 @@ ul {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    
-        
-    /* sistemare altro */
+    cursor: pointer;
+    padding-top: 60px;
+    padding-left: 300px;    
+}
+li{
+    padding-left: 30px;
 }
 .bianco {
     color: white;
@@ -84,13 +94,13 @@ ul {
 
 nav {
     background-color: rgb(25, 6, 7);
-    height: 80px;
+    height: 100px;
     position: relative;
 }
 
 .pallinorosso {
-    height: 35px;
-    width: 35px;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
     background-color: rgb(207, 25, 37);
     color: white;
@@ -100,5 +110,12 @@ nav {
     top: 0px;
 
     /* sistemare qui */
+}
+.piu{
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    font-size: 18px;
 }
 </style>
