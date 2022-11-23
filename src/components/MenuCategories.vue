@@ -2,10 +2,10 @@
     <div>
     <!-- titolo -->
         <div class="container gvcont">
-            <h2><strong>Menu Categories</strong></h2>
-            <button type="button" class="btn btn-danger btngv text-uppercase">view the full menu <i class="fas fa-arrow-circle-right"></i></button>
+            <h2 class="pl"><strong>Menu Categories</strong></h2>
+            <button type="button" class="btn btn-danger btngv text-uppercase">view the full menu  <i class="p-1 fas fa-arrow-circle-right"></i></button>
         </div>
-        <!-- cards -->
+        <!-- cards menu-->
         <div class="d-flex row container center">
             <div class="flex-wrap col-3" v-for="(item,index) in menu" :key="index">
                 <img class="imggv" :src="item.img" alt="">    
@@ -41,12 +41,22 @@
         </div>
     </div>
     <!-- LATEST NEWS -->
-    <div>
-        <h2>Latest News</h2>
-        <button type="button" class="btn btn-danger btngv text-uppercase">read more news<i class="fas fa-arrow-circle-right"></i></button>
+    <div class="container d-flex gvcont">
+        <h2 class="pl"><strong>Latest News</strong></h2>
+        <button type="button" class="btn btn-danger btngv text-uppercase">read more news<i class="p-1 fas fa-arrow-circle-right"></i></button>
     </div>
-
-
+    <div class="container d-flex flex-row">
+        <div class="text-center ">
+            <img class="prgv imgmis" src="/public/image/pancake-burger-600x450.jpg" alt="">
+            <h3 class="prgv p-2"><strong>NEW: The Pancake Burger</strong></h3>
+            <p class="picc prgv">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente repellat eius culpa quo ut nisi debitis dolorum nam, rerum eum! Ratione inventore recusandae sed impedit iusto hic fuga reprehenderit laboriosam.</p>
+        </div>
+        <div class="text-center">
+            <img class="imgmis" src="/public/image/new-milkshake-menu-600x450.jpg" alt="">
+            <h3 class="p-2"><strong>New Milkshake Menu</strong></h3>
+            <p class="piccolo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente repellat eius culpa quo ut nisi debitis dolorum nam, rerum eum! Ratione inventore recusandae sed impedit iusto hic fuga reprehenderit laboriosam.</p>
+        </div>
+    </div>
 </template>
 
 <script>
@@ -103,6 +113,10 @@
 }
 .gvcont{
     margin: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    margin-top: 70px;
 }
 .giallo{
     color: $giallo;
@@ -140,5 +154,23 @@
 }
 .centro{
     margin-left: 100px;
+}
+.pl{
+    padding-left: 80px;
+}
+.piccolo{
+    font-size: 14px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.picc{
+    font-size: 14px;
+}
+.prgv{
+    margin-right: 20px;
+}
+.imgmis{
+    width: 535px;
+    height: 430px;
 }
 </style>

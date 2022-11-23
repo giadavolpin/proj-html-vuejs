@@ -1,4 +1,5 @@
 <template>
+    <!-- OUR MOST POPULAR DISHES -->
     <div class="container gvcontainer">
         <!-- container allineare al centro -->
         <div class="d-flex flex-row justify-content-between">
