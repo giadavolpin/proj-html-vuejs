@@ -64,7 +64,7 @@ export default {
 .container {
     max-width: 700px;
     height: 700px;
-    background-color: white;
+    background-color: $white;
     /* gestire con il juntotron alzare di 10cm non usare position */
 }
 .gvcard{
@@ -90,7 +90,7 @@ export default {
     height: 360px;
     background-size: cover;
 }
-.misura{
+.misura{ 
     width: 350px;
 }
 </style>

@@ -109,7 +109,7 @@
     border-radius: 30px;
     display: flex;
     align-items: center;
-    flex-direction: flex-end;
+    
 }
 .gvcont{
     margin: 30px;

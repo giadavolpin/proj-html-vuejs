@@ -2,7 +2,7 @@
     <nav>
         <div class="d-flex ">
             <div class="align-content-end">
-                <img  class="p-3" src="/image/takeout-logo.png" alt="">
+                <img class="allin" src="/image/takeout-logo.png" alt="">
             </div>
             <div class="d-flex"> 
                 <ul>
@@ -13,7 +13,6 @@
         </div>
 
         <div>
-            <!-- sistemare il position:relative -->
             <div class="pallinorosso">
                 <span class="d-flex justify-content-center piu">+</span>
             </div>
@@ -58,14 +57,17 @@ export default {
     },
      
 }
-
-
 </script>
 
 <style lang="scss" scoped>
 @use '../assets/variables' as*;
 li:hover {
-    color: rgb(249, 210, 47); 
+    color: $giallo; 
+}
+.allin{
+    padding-top: 40px;
+    padding-left: 100px;
+
 }
 .allineamento{
     padding-top: 65px;
@@ -102,7 +104,7 @@ nav {
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    background-color: rgb(207, 25, 37);
+    background-color: $rosso;
     color: white;
     position: absolute;
     bottom: 50px;

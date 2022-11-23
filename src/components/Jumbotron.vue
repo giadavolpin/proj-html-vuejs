@@ -1,19 +1,18 @@
 <template>
     <!-- JUMBOTRON prima schermata -->
     <div class="jumbotron">
-        <div class="d-flex flex-column container ">
-            <h3 class="bianco">Hungry?</h3>
-            <h1 class=" giallo">Great Food</h1>
+        <div class="d-flex flex-column container">
+            <h3 class="gvpt bianco">Hungry?</h3>
+            <h1 class="giallo">Great Food</h1>
             <h1 class="bianco">Delivered</h1>
         </div>
         <div class="d-flex container">
             <div class="rosso">
-                <p class="text-uppercase"> view our menu</p>
-                <div class="">
-                    <!-- icona  -->
-                </div>
+                <p class="text-uppercase"> view our menu <i class="fas fa-arrow-circle-right"></i></p>
+                
             </div>
         </div>
+       <!-- btn fissi nella pagina -->
         <div class="btnbianco btnsopra">
             <!-- bottone a lato -->
         </div>
@@ -50,30 +49,36 @@ export default {
 }
 
 .rosso {
-    background-color: rgb(204, 26, 38);
-    color: white;
+    background-color: $rosso;
+    color: $white;
     border-radius: 20px;
-    text-align: center;
     position: absolute;
-    width: 150px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-content: center;    //sistemare qui
 }
 
 .btnbianco {
-    height: 45px;
-    width: 45px;
+    height: 65px;
+    width: 65px;
     background-color: white;
     border-radius: 10px;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    background-color: $white;
+    border-radius: 6px;
 }
 
 .btnsopra {
-    position: absolute;
-    right: 10 px;
-    top: 10px;
+    position: absolute; 
 }
-
 .btnsotto {
     position: absolute;
-    right: 10px;
-    top: 60px;
+}
+.gvpt{
+    padding-top: 80px;
 }
 </style>
