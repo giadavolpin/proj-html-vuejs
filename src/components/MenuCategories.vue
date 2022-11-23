@@ -6,36 +6,47 @@
             <button type="button" class="btn btn-danger btngv text-uppercase">view the full menu <i class="fas fa-arrow-circle-right"></i></button>
         </div>
         <!-- cards -->
-        <div class="d-flex container" v-for="(item,index) in menu" :key="index">
-            <img class="imggv" :src="item.img" alt="">    
+        <div class="d-flex row container center">
+            <div class="flex-wrap col-3" v-for="(item,index) in menu" :key="index">
+                <img class="imggv" :src="item.img" alt="">    
+            </div>
         </div>
-        <div class="container d-flex flex-row justify-content-around">
-            <div>
+        <div class="container d-flex flex-row justify-content-around mt-3 mb-2">
+            <div class="flex">
                 <img src="/public/image/vegetarian.png" alt="">
                 <p class="p-1">Vegetarian</p>
             </div>
-            <div>
+            <div class="flex">
                 <img src="/public/image/grano.png" alt="">
                 <p class="p-1">Gluten Free</p>
             </div>
-            <div>
+            <div class="flex">
                 <img src="/public/image/latte.png" alt="">
                 <p class="p-2">Dairy Free</p>
             </div>
-            <div>
+            <div class="flex">
                 <img src="/public/image/keto.png" alt="">
                 <p class="p-1">Keto Friendly</p>
             </div>
         </div>
     </div>
     <div class="orderapp">
-        <div>
-        <h2>Download Our</h2>
-        <h1>Ordering App</h1>
-        <img src="/image" alt="">
+        <div class="container d-flex flex-column justify-content-center">
+            <h4 class="bianco mt-5">Download Our</h4>
+            <h1 class="giallo mb-2">Ordering App</h1>
         </div>
-        
-    </div>    
+        <div class="d-flex row centro">
+            <img class="imgstore" src="/public/image/app-store-badge.png" alt="">
+            <img class="imgstore" src="/public/image/play-store-badge.png" alt="">
+        </div>
+    </div>
+    <!-- LATEST NEWS -->
+    <div>
+        <h2>Latest News</h2>
+        <button type="button" class="btn btn-danger btngv text-uppercase">read more news<i class="fas fa-arrow-circle-right"></i></button>
+    </div>
+
+
 </template>
 
 <script>
@@ -93,12 +104,41 @@
 .gvcont{
     margin: 30px;
 }
+.giallo{
+    color: $giallo;
+    font-size: 48px;
+}
+.bianco{
+    color: $white;
+    margin-bottom: 0;
+}
+.center{
+    margin-left: 100px;
+}
 .orderapp{
     background-image: url(public/image/app-ordering-scaled.jpg);
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .imggv{
-    width: 250px;
-    height: 170px;
+    width: 100%;
+    padding-bottom: 20px;
+}
+.gvcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.imgstore{
+    width: 130px;
+    margin: 10px;
+    margin-top: 20px;
     
+}
+.centro{
+    margin-left: 100px;
 }
 </style>
