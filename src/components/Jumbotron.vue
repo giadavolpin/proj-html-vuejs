@@ -10,12 +10,12 @@
             <button type="button" class="btn btn-danger btngv text-uppercase">view our menu <i class="fas fa-arrow-circle-right"></i></button>
         </div>
        <!-- btn fissi nella pagina -->
-        <div class="btnbianco btnsopra">
+        <!-- <div class="btnbianco btnsopra"> -->
             <!-- bottone a lato -->
-        </div>
-        <div class="btnbianco btnsotto">
+       <!--  </div> -->
+      <!--   <div class="btnbianco btnsotto"> -->
             <!-- bottone a lato -->
-        </div>
+      <!--   </div> -->
     </div>
 </template>
 

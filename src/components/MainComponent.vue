@@ -92,5 +92,11 @@ export default {
 }
 .misura{ 
     width: 350px;
+    transition: background-color 5s;
+    cursor: pointer;
 }
+.misura:hover{
+    background-color: $grigio;
+}
+
 </style>

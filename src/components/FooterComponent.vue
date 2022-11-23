@@ -1,14 +1,14 @@
 <template>
    <div class="imgback bianco">
         <div class="d-flex justify-content-around">
-            <ul class="pt-2 ">
+            <ul class="gvpt-2 ">
                 <li class="text-uppercase"><strong> order online </strong></li>
                  <li v-for="(item,index) in order" :key="index">{{item.name}}</li>
             </ul>
                
-            <ul class="pt-2 ">
+            <ul class="gvpt-2 ">
                 <li class="text-uppercase"><strong> navigate</strong></li>
-                <li>Home</li>
+                <li class="giallo">Home</li>
                 <li>Alternate Home</li>
                 <li>Menu</li>
                 <li>About</li>
@@ -17,7 +17,7 @@
                 <li>Cart</li>
             </ul>
       
-            <div class="pt-2">    
+            <div class="gvpt-2">    
                 <ul class=" ">
                     <li class="text-uppercase"><strong> information</strong></li>
                     <li>My Account</li>
@@ -28,11 +28,11 @@
                     <img class="bordo" src="/public/image/app-store-badge.png" alt="">
                 </div>
                 <div>    
-                    <img class="bordo" src="/public/image/play-store-badge.png" alt="">
+                    <img class="bordo margin" src="/public/image/play-store-badge.png" alt="">
                 </div>
             </div>
 
-            <ul  class="pt-2">
+            <ul  class="gvpt-2">
                 <li class="text-uppercase"><strong> opening hours </strong></li>
                 <li>Mon - <span class="giallo">10AM to 11PM</span></li>
                 <li>Tue- <span class="giallo">10AM to 11PM</span></li>
@@ -42,9 +42,9 @@
                 <li>Sat - <span class="giallo">10AM to 11PM</span></li>
                 <li>Sun - <span class="giallo">10AM to 11PM</span></li>
             </ul>
-            <div  class="pt-2">
+            <div  class="gvpt-2">
                 <ul>
-                    <li class="text-uppercase"><strong> voucher</strong></li>
+                    <li class="text-uppercase text-center"><strong> voucher</strong></li>
                     <img class="sconto" src="/public/image/footer-coupon.png" alt="">
                     <li class="bianco ext"> <strong> Just Use The Code</strong></li>
                     <li class="text-uppercase ext giallo"><strong> firstorder</strong></li>
@@ -158,10 +158,17 @@ li:hover{
     border: 2px solid $white;
     border-radius: 10px;
     margin-bottom: 10px;
+    margin-left: 30px;
 }
 .sconto{
     width: 100px;
     height: 100px;
+}
+.margin{
+    margin-bottom: 50px;
+}
+.gvpt-2{
+    margin-top: 100px;
 }
 
 </style>
