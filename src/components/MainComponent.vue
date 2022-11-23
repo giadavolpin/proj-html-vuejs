@@ -1,42 +1,42 @@
 <template>
     <!-- OUR MOST POPULAR DISHES -->
-    <div class="container gvcontainer">
-        <!-- container allineare al centro -->
-        <div class="d-flex flex-row justify-content-between">
-            <!-- va in centro??  -->
-            <div class="text-uppercase">
-                <i class="fa-regular fa-clock"></i>
-              <strong>24/7 delivery</strong>
-            </div>
-            <div class="text-uppercase">
-                <i class="fa-solid fa-burger"></i>
-                <strong>over 100 dishes </strong>
-            </div>
-            <div class="text-uppercase">
-                <i class="fa-solid fa-mobile-screen-button"></i>
-                <strong>in app ordering </strong>
-            </div>
-            <div class="text-uppercase">
-                <i class="fa-solid fa-car"></i>
-                <strong> fast delivery</strong>
+    <div class="gvcontainer">
+        <div class="">  <!-- top -30px -->
+            <div class="d-flex flex-row justify-content-around text-center">
+                <div class="text-uppercase">
+                    <i class="fa-regular fa-clock"></i>
+                    <strong>24/7 delivery</strong>
+                </div>
+                <div class="text-uppercase">
+                    <i class="fa-solid fa-burger"></i>
+                    <strong>over 100 dishes </strong>
+                </div>
+                <div class="text-uppercase">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <strong>in app ordering </strong>
+                </div>
+                <div class="text-uppercase">
+                    <i class="fa-solid fa-car"></i>
+                    <strong> fast delivery</strong>
+                </div>
             </div>
         </div>
-        <h3 class="pt-5 text-center">Our Most Popular Dishes</h3>
-        <div class="d-flex flex-row">
+        <h2 class="pt-5 text-center"><strong> Our Most Popular Dishes</strong></h2>
+        <div class="d-flex flex-row justify-content-center">
             <div class="gvcard">
-                <img src="public/image/skin-on-fries-200x286.jpg" alt="">
-                <p class="text-center"><strong> Skin On Fries</strong></p>
-                <p class="rosso">$3.00-$6.00</p>
+                <img class="misura" src="public/image/skin-on-fries-400x571.jpg" alt="">
+                <h2 class="text-center"><strong> Skin On Fries</strong></h2>
+                <h2 class="rosso">$3.00-$6.00</h2>
             </div>
             <div class="gvcard"> 
-                <img src="public/image/choco-cookie-frappe-200x286.jpg" alt="">
-                <p class="text-center"><strong> Choco Cookie Frappe</strong></p>
-                <p class="rosso">$4.99</p>
+                <img class="misura" src="public/image/choco-cookie-frappe-400x571.jpg" alt="">
+                <h2 class="text-center"><strong> Choco Cookie Frappe</strong></h2>
+                <h2 class="rosso">$4.99</h2>
             </div>
             <div class="gvcard"> 
-                <img src="public/image/donut-burger-200x286.jpg" alt="">
-                <p class="text-center"><strong>The Donut Burger</strong> </p>
-                <p class="rosso">$6.99</p>
+                <img class="misura" src="public/image/donut-burger-400x571.jpg" alt="">
+                <h2 class="text-center"><strong>The Donut Burger</strong> </h2>
+                <h2 class="rosso">$6.99</h2>
             </div>
         </div>
         <div class="d-flex justify-content-center">
@@ -82,12 +82,15 @@ export default {
 }
 .rosso{
     color: $rosso;
-    font-size: 10px;
+    font-size: 20px;
     text-align: center;
 }
 .sconto{
     background-image: url(public/image/sconto.png); 
     height: 360px;
     background-size: cover;
+}
+.misura{
+    width: 350px;
 }
 </style>

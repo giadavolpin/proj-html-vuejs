@@ -73,6 +73,8 @@ ul {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    
         
     /* sistemare altro */
 }
