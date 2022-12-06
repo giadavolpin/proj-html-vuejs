@@ -28,7 +28,7 @@ export default {
     },
     data() {
             return {
-                nome: Giada
+                nome: "Giada"
             }}
 }
 </script>
