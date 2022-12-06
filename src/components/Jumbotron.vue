@@ -8,6 +8,7 @@
         </div>
         <div class="d-flex container">
             <button type="button" class="btn btn-danger btngv text-uppercase">view our menu <i class="fas fa-arrow-circle-right"></i></button>
+           {{nome}} {{cognome}}
         </div>
        <!-- btn fissi nella pagina -->
         <!-- <div class="btnbianco btnsopra"> -->
@@ -21,7 +22,14 @@
 
 <script>
 export default {
-    name: 'Jumbotron'
+    name: 'Jumbotron',
+    props:{
+        cognome: String, 
+    },
+    data() {
+            return {
+                nome: Giada
+            }}
 }
 </script>
 

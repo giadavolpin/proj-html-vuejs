@@ -18,7 +18,7 @@
             </div>
         </div>
     </nav>
-    <Jumbotron />
+    <Jumbotron cognome="Volpin"/>
 </template>
 
 <script>
